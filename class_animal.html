@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Animal {
+        ipName;
+        ipWeight;
+
+        getName() {
+            return this.ipName; /*trả về tên của animal*/
+        }
+
+        getWeight() {
+            return this.ipWeight;/*/!*trả về cân nặng của animal*!/*/
+        }
+
+        toString() {
+            return this.ipName + " : " + this.ipWeight;/* /!*trả về chuỗi chứa thông tin của tên và cân nặng*!/*/
+        }
+    }
+    let objAnimal1 = new Animal(); /*Tạo đối tượng có tên là objAnimal1*/
+    objAnimal1.ipName = "Elephant"; /*Thiết đặt tên cho đối tượng objAnimal1 là “Elephant”*/
+    objAnimal1.ipWeight = 45.6; /*Thiết đặt cân nặng cho đối tượng objAnimal1 là 45.6*/
+    alert(objAnimal1.toString()); /*Gọi phương thức toString()*/
+
+    let objAnimal2 = new Animal(); /*Tạo đối tượng có tên là objAnimal2 sử dụng phương thức khởi tạo có 2 tham số là tên và cân nặng*/
+    objAnimal2.ipName = "Mouse"; /*Đổi tên cho đối tượng objAnimal2 thành “Mouse”*!/*/
+    alert(objAnimal2.ipName);
+</script>
+</body>
+</html>
